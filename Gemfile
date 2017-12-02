@@ -27,6 +27,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'devise'
 gem 'high_voltage'
+gem 'httparty'
 gem 'jquery-rails'
 group :development do
   gem 'better_errors'
@@ -36,6 +37,7 @@ group :development do
   gem 'spring-commands-rspec'
 end
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'rspec-rails'
