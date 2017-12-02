@@ -14,7 +14,14 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    
+ 
+<style>
+body {
+    background: url(https://www.awesomecampers.com.au/wp-content/uploads/2017/03/bg-blur.jpg) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+</style> 
     <div class="container" id="content">
         <div class="row">
             <div class="col-md-2">
@@ -22,9 +29,14 @@
             <div class="col-md-8">
                 <h2> </h2>
                 <h1 class="display-3">Welcome to Price Alert!</h1>
-                    <p>Price Alert lets you choose from a variety of BestBuy's products.</p>
-                    <p>Once you've chosen your product, you can enter your desired price range.</p>
-                    <p>When the product reaches your your desired price range, you will be alerted through e-mail.</p>
+                    <div class="col-md-12">
+                        <p>Price Alert lets you choose from a variety of BestBuy's products.</p>
+                        <p>Once you've chosen your product, you can enter your desired price range.</p>
+                        <p>When the product reaches your your desired price range, you will be alerted through e-mail.</p>
+                    </div>
+                <div id="call-to-action">
+                    <%= button_to "Register New Account", new_user_session_path, :method => "get", :class => "btn btn-primary" %>
+                </div>
                 <br>
               
             </div>
@@ -32,6 +44,8 @@
             </div>
         </div>
     </div>
+    
+
     
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
