@@ -71,4 +71,13 @@ class RetailersController < ApplicationController
     def retailer_params
       params.fetch(:retailer, {})
     end
+    
+   def getDetails
+   # keep in mind, api call may fail so you may want surround this with a begin/rescue
+   api_response = YourApiCall.new.get_details(params[:id])
+   # perhaps create a model
+   @model = SomeModel.new(fname: api_response[:first_name], lname: api_response[:last_name])
+    # etc...
+  end
+end
 end
