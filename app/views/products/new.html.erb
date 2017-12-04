@@ -1,0 +1,16 @@
+
+<%= form_with scope: :article, local: true do |form| %>
+  <p>
+    <%= form.label :Product %><br>
+    <%= form.text_field :Product %>
+  </p>
+ 
+  <p>
+    <%= form.label :SKU %><br>
+    <%= form.text_area :SKU %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
