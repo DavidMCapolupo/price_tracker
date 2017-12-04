@@ -14,7 +14,25 @@
  *= require_self
  */
 
+.navbar.navbar-expand-md.navbar-dark.bg-dark {
+    background-color: #003b64 !important;
+}
+
 #call-to-action {
     margin: 40px;
     text-align: center;
+}
+
+.product-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.product-price {
+    text-align: center;
+    color: grey;
+}
+
+.product-price.sale-price {
+    color: red;
 }
