@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   resources :products
   get 'product/index'
   
+    
   resources :retailers
   get 'static_pages/home'
-
+    
   get 'static_pages/help'
 
   get 'static_pages/about'
