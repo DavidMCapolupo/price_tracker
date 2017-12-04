@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get 'product/index'
+  get 'tracker/index'
   resources :products
+  get 'product/index'
+  
   resources :retailers
   get 'static_pages/home'
 
