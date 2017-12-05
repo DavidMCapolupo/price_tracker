@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'tracker/index'
   get 'tracker/new'
-  resources :trackers
+  resources :tracker
   get 'product/index'
   
     
