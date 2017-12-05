@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   get 'tracker/index'
   get 'tracker/new'
   resources :tracker
+    
   get 'product/index'
+  
   
     
   resources :retailers
