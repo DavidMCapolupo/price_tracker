@@ -19,8 +19,12 @@
 }
 
 #logo {
-    height: 50px;
+    height: 25px;
     width: auto;
+}
+
+a .navbar-brand:hover {
+    color: #003b64 !important;
 }
 
 #call-to-action {
@@ -40,4 +44,8 @@
 
 .product-price.sale-price {
     color: red;
+}
+
+.call-to-action {
+    color: #003b64;
 }
