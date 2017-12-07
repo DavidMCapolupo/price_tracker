@@ -46,6 +46,12 @@ a .navbar-brand:hover {
     color: red;
 }
 
-.call-to-action {
-    color: #003b64;
+.btn-primary.register {
+    background-color: #003b64;
+    border-color: #003b64;
+}
+
+.btn-primary.register:hover {
+    background-color: #f6eb16;
+    border-color: #f6eb16;
 }
